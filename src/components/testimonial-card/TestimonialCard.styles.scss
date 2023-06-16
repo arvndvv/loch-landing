@@ -1,0 +1,9 @@
+.testimonial-card {
+  @apply bg-white w-[100%] shadow-input rounded-xl p-5;
+  &__title {
+    @apply flex gap-2 items-center;
+  }
+  &__desig {
+    @apply text-sm text-text-gray;
+  }
+}

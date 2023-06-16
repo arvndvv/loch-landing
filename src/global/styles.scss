@@ -1,0 +1,19 @@
+.btn {
+  @apply outline-none rounded-lg transition-colors ease-in-out duration-300 bg-dark hover:bg-gray-800 text-white w-full font-bold py-4 px-7 pointer-events-auto;
+  &--disabled {
+    @apply bg-gray-400 cursor-not-allowed pointer-events-none;
+  }
+}
+
+.input {
+  @apply hover:outline rounded-lg transition-colors ease-in-out duration-300 w-full py-4 px-6 border-2 border-input shadow-input;
+  &--error {
+    @apply border-red-500 outline-none;
+  }
+}
+.error-message {
+  @apply text-red-500 text-sm invisible;
+  &-show {
+    @apply visible;
+  }
+}

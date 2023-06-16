@@ -1,0 +1,12 @@
+.notify-setting {
+  @apply w-[120px] h-[120px] lg:w-[180px] lg:h-[180px] block bg-no-repeat bg-contain;
+  &--one {
+    @apply bg-card1;
+  }
+  &--two {
+    @apply bg-card2;
+  }
+  &--three {
+    @apply bg-card3;
+  }
+}
