@@ -26,6 +26,9 @@ module.exports = {
         'card1': "url('/src/assets/notify/Card1.png')",
         'card2': "url('/src/assets/notify/Card2.png')",
         'card3': "url('/src/assets/notify/Card3.png')",
+        'testimonial1': "url('/src/assets/testimonial/testimonial1.png')",
+        'testimonial2': "url('/src/assets/testimonial/testimonial2.png')",
+        'testimonial3': "url('/src/assets/testimonial/testimonial3.png')",
       },
     },
 

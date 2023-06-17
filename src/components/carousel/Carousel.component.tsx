@@ -3,7 +3,12 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-export default function Carousel({ autoplay, children, margin }: any) {
+export default function Carousel({
+  autoplay,
+  children,
+  margin,
+  items = 1.5,
+}: any) {
   return (
     <div className="carousel-container">
       <OwlCarousel
@@ -13,7 +18,7 @@ export default function Carousel({ autoplay, children, margin }: any) {
         dots={false}
         autoplay={autoplay}
         autoplaySpeed={1000}
-        items={1.5}
+        items={items}
       >
         {children}
       </OwlCarousel>

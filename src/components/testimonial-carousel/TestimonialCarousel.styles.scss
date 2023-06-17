@@ -1,0 +1,12 @@
+.testimonial-card {
+  @apply bg-left-bottom h-[136px] shadow-input rounded-xl p-5 bg-no-repeat bg-contain;
+  &--one {
+    @apply bg-testimonial1 w-[350px];
+  }
+  &--two {
+    @apply bg-testimonial2 w-[353px];
+  }
+  &--three {
+    @apply bg-testimonial3 w-[530px];
+  }
+}
