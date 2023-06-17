@@ -1,19 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import Landing from "./pages/landing.page";
 
 function App() {
+  const [vw, setVw] = useState(window.innerWidth);
   function debounce(func: any) {
     let timer: any;
     return function (event: any) {
       if (timer) clearTimeout(timer);
-      timer = setTimeout(func, 500, event);
+      timer = setTimeout(
+        () => {
+          func(vw);
+        },
+        500,
+        event
+      );
     };
   }
-  function resizer() {
+  function resizer(vwOld: number) {
     //owlcarousel showing delay in calculation of width when page is resized
     // since resizing is not a common event, we can reload the page to fix the issue (with debounce to handle multiple resize events)
-    window.location.reload();
+    if (vwOld !== window.innerWidth) {
+      window.location.reload();
+    }
   }
   useEffect(() => {
     window.addEventListener("resize", debounce(resizer));
